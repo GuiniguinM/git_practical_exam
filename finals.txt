@@ -1,0 +1,40 @@
+mkdir git_practical_exam
+cd git_practical_exam
+git init
+echo "# git_practical_exam" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/GuiniguinM/git_practical_exam.git
+git push -u origin main
+git remote -v
+echo > student_info.txt
+echo Name: Guiniguin, Mylene G. > student_info.txt
+echo Exam Date: December 7, 2024 > student_info.txt
+echo Name: Guiniguin, Mylene G. > student_info.txt
+echo Exam Date: December 7, 2024 >> student_info.txt
+git add .
+git commit -m "Initial commit: Added student_info.txt"
+git push
+echo Favorite Git Command: git push >> student_info.txt
+git add student_info.txt
+git commit -m "Updated student_info.txt with favorite Git command"
+git push
+git branch feature-bio
+git checkout feature-bio
+echo About Me: > bio.txt
+echo I am learning Git for version control. >> bio.txt
+git add bio.txt
+git commit -m "Added bio.txt in feature-bio branch"
+git push
+git push --set-upstream origin feature-bio
+git checkout main
+git merge feature-bio
+git pull origin main
+git pull
+git push origin main
+doskey /history > finals.txt
+git push origin main
+git tag exam-submission
+doskey /history > finals.txt
